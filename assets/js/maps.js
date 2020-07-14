@@ -7,16 +7,16 @@ function initMap() {
         }
     });
 
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var label = "A";
 
-    var locations = [
-        { lat: 51.372002, lng: -0.788655 },
+    var location = [
+        { lat: 51.371832, lng: -0.788690 },
     ];
 
-    var markers = locations.map(function(location, i) {
+    var markers = location.map(function(location, i) {
         return new google.maps.Marker({
             position: location,
-            label: labels[i % labels.length]
+            label: label[i % label.length]
         });
     });
 
